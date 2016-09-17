@@ -1,2 +1,10 @@
-[workspace]
-members = ["any_crate"]
+[package]
+name = "cargo_replace_test"
+version = "0.1.0"
+authors = ["Nathanael Jones <nathanael.jones@gmail.com>"]
+
+[replace]
+"pkg-config:0.3.8" = { git = "https://github.com/imazen/pkg-config-rs", branch="master"}
+
+[dependencies]
+hyper = "*"
