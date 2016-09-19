@@ -1,2 +1,5 @@
 [workspace]
 members = ["any_crate"]
+
+[replace]
+"pkg-config:0.3.8" = { git = "https://github.com/imazen/pkg-config-rs", branch="master"}
